@@ -3,133 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MainStream Sewer and Drain Service | Website Preview by b.spoke</title>
-  <meta name="description" content="A custom website preview built for MainStream Sewer and Drain Service by b.spoke digital agency.">
+  <title>MainStream Sewer and Drain Service | Everywhere You Need Us</title>
+  <meta name="description" content="MainStream Sewer and Drain Service — 35+ years of trusted sewer, drain, and plumbing service in Oklahoma City. Licensed, bonded, insured. Call (405) 513-7188.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ===== CSS VARIABLES ===== */
     :root {
-      /* b.spoke brand palette */
-      --bg-primary: #1a1a2e;
-      --bg-surface: #16213e;
-      --bg-elevated: #1e2a4a;
-      --accent: #4361ee;
-      --accent-hover: #3651d4;
-      --accent-light: rgba(67, 97, 238, 0.15);
-      --text-primary: #ffffff;
-      --text-secondary: #a0aec0;
+      --brand-primary: #1a5276;
+      --brand-primary-dark: #154360;
+      --brand-accent: #e67e22;
+      --brand-accent-dark: #d35400;
+      --brand-primary-rgb: 26,82,118;
+      --brand-accent-rgb: 230,126,34;
+      --bg-white: #ffffff;
+      --bg-light: #f8f9fa;
+      --bg-warm: #f5f5f0;
+      --text-dark: #1a1a2e;
+      --text-body: #4a5568;
       --text-muted: #718096;
-      --border: #2d3748;
-      --success: #48bb78;
+      --border-light: #e2e8f0;
+      --border-subtle: #edf2f7;
+      --brand-tint: rgba(var(--brand-primary-rgb), 0.06);
+      --brand-light: rgba(var(--brand-primary-rgb), 0.10);
+      --brand-shadow: rgba(var(--brand-primary-rgb), 0.15);
+      --accent-tint: rgba(var(--brand-accent-rgb), 0.08);
+      --accent-shadow: rgba(var(--brand-accent-rgb), 0.25);
       --radius-sm: 8px;
       --radius-md: 12px;
-      --shadow-card: 0 4px 24px rgba(0,0,0,0.3);
-      --shadow-hover: 0 12px 40px rgba(67,97,238,0.2);
+      --radius-lg: 16px;
+      --shadow-card: 0 2px 16px rgba(0,0,0,0.06);
+      --shadow-hover: 0 8px 32px var(--brand-shadow);
       --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-      /* Prospect-specific overrides */
-      --prospect-accent: #2563EB;
-      --prospect-accent-hover: #1D4ED8;
     }
-
-    /* ===== RESET & BASE ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
+      background: var(--bg-white);
+      color: var(--text-body);
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-
-    /* ===== TYPOGRAPHY ===== */
-    h1, h2, h3, h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1, h2, h3, h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; line-height: 1.2; color: var(--text-dark); }
     h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
     h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); margin-bottom: 1rem; }
-    h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
-    p { color: var(--text-secondary); max-width: 640px; }
-
-    /* ===== LAYOUT ===== */
+    h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    p { color: var(--text-body); max-width: 640px; }
+    .section-subtitle { color: var(--text-muted); font-size: 1.05rem; max-width: 580px; }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
     section { padding: 80px 0; }
-    section:nth-child(even) { background: var(--bg-surface); }
-
-    /* ===== NAV ===== */
+    .bg-light { background: var(--bg-light); }
+    .bg-tint { background: var(--brand-tint); }
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(26, 26, 46, 0.85);
+      background: rgba(255,255,255,0.92);
       backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 16px 0;
+      border-bottom: 1px solid var(--border-light);
+      padding: 14px 0;
     }
     nav .container { display: flex; justify-content: space-between; align-items: center; }
     .nav-brand {
       font-family: 'DM Sans', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       font-weight: 800;
-      color: var(--text-primary);
+      color: var(--brand-primary);
       text-decoration: none;
       letter-spacing: -0.5px;
     }
-    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
     .nav-links a {
-      color: var(--text-secondary);
+      color: var(--text-body);
       text-decoration: none;
       font-size: 0.9rem;
       font-weight: 500;
       transition: var(--transition);
     }
-    .nav-links a:hover { color: var(--text-primary); }
+    .nav-links a:hover { color: var(--brand-primary); }
     .nav-cta {
-      background: var(--prospect-accent);
+      background: var(--brand-primary) !important;
       color: #fff !important;
       padding: 10px 24px;
       border-radius: var(--radius-sm);
       font-weight: 600;
     }
-    .nav-cta:hover { background: var(--prospect-accent-hover); transform: translateY(-1px); }
-
-    /* Mobile nav */
-    .nav-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; }
-
-    /* ===== HERO ===== */
+    .nav-cta:hover { background: var(--brand-primary-dark) !important; transform: translateY(-1px); }
+    .nav-toggle { display: none; background: none; border: none; color: var(--text-dark); font-size: 1.5rem; cursor: pointer; }
     .hero {
-      padding: 160px 0 100px;
+      padding: 140px 0 90px;
       text-align: center;
-      background: var(--bg-primary);
+      background: linear-gradient(170deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
+      color: #ffffff;
       position: relative;
       overflow: hidden;
     }
     .hero::before {
       content: '';
       position: absolute;
-      top: -50%; left: 50%; transform: translateX(-50%);
-      width: 800px; height: 800px;
-      background: radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 70%);
+      top: -40%; right: -10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
       pointer-events: none;
     }
-    .hero h1 { margin-bottom: 1.25rem; position: relative; }
-    .hero p { font-size: 1.15rem; margin: 0 auto 2rem; max-width: 560px; position: relative; }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%; left: -5%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(var(--brand-accent-rgb),0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero h1 { margin-bottom: 1rem; position: relative; color: #ffffff; }
+    .hero p { font-size: 1.15rem; margin: 0 auto 2rem; max-width: 560px; position: relative; color: rgba(255,255,255,0.85); }
     .hero-cta {
       display: inline-block;
-      background: var(--prospect-accent);
+      background: var(--brand-accent);
       color: #fff;
       padding: 16px 40px;
       border-radius: var(--radius-sm);
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1rem;
       text-decoration: none;
       transition: var(--transition);
       position: relative;
-      box-shadow: 0 4px 20px rgba(37,99,235,0.3);
+      box-shadow: 0 4px 20px var(--accent-shadow);
     }
-    .hero-cta:hover { background: var(--prospect-accent-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,99,235,0.4); }
-
-    /* ===== SERVICES GRID ===== */
+    .hero-cta:hover { background: var(--brand-accent-dark); transform: translateY(-2px); box-shadow: 0 8px 30px var(--accent-shadow); }
+    .emergency-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .emergency-badge .pulse {
+      width: 8px; height: 8px;
+      background: #48bb78;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .trust-bar {
+      background: var(--bg-light);
+      border-bottom: 1px solid var(--border-light);
+      padding: 16px 0;
+    }
+    .trust-bar .container {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+    .trust-icon { color: var(--brand-primary); font-size: 1.1rem; }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -137,15 +178,15 @@
       margin-top: 2.5rem;
     }
     .service-card {
-      background: linear-gradient(135deg, var(--bg-surface), var(--bg-elevated));
-      border: 1px solid var(--border);
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
       border-radius: var(--radius-md);
       padding: 32px;
       transition: var(--transition);
     }
     .service-card:hover {
       transform: translateY(-4px);
-      border-color: var(--prospect-accent);
+      border-color: var(--brand-primary);
       box-shadow: var(--shadow-hover);
     }
     .service-icon {
@@ -153,24 +194,50 @@
       margin-bottom: 1rem;
       display: block;
     }
-    .service-card h3 { color: var(--text-primary); }
-    .service-card p { font-size: 0.95rem; color: var(--text-secondary); }
-
-    /* ===== ABOUT / WHY CHOOSE ===== */
+    .service-card h3 { color: var(--text-dark); }
+    .service-card p { font-size: 0.95rem; }
     .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
     .about-text p { margin-bottom: 1rem; }
     .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 2rem; }
-    .stat { text-align: center; }
+    .stat {
+      text-align: center;
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 24px 16px;
+    }
     .stat-number {
       font-family: 'DM Sans', sans-serif;
       font-size: 2.25rem;
       font-weight: 800;
-      color: var(--prospect-accent);
+      color: var(--brand-primary);
       display: block;
     }
     .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
-
-    /* ===== REVIEWS ===== */
+    .cert-bar {
+      text-align: center;
+      padding: 48px 0;
+    }
+    .cert-bar h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .cert-logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .cert-logos span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-body);
+      padding: 10px 20px;
+      background: var(--bg-light);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-light);
+    }
     .reviews-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -178,17 +245,40 @@
       margin-top: 2.5rem;
     }
     .review-card {
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
       border-radius: var(--radius-md);
       padding: 28px;
+      transition: var(--transition);
     }
-    .review-stars { color: #f6ad55; font-size: 1rem; margin-bottom: 12px; }
-    .review-text { font-size: 0.95rem; font-style: italic; color: var(--text-secondary); margin-bottom: 16px; }
-    .review-author { font-weight: 600; font-size: 0.85rem; color: var(--text-primary); }
-
-    /* ===== CONTACT / CTA ===== */
-    .cta-section { text-align: center; }
+    .review-card:hover { box-shadow: var(--shadow-card); }
+    .review-stars { color: #f59e0b; font-size: 1rem; margin-bottom: 12px; }
+    .review-text { font-size: 0.95rem; font-style: italic; color: var(--text-body); margin-bottom: 16px; line-height: 1.7; }
+    .review-author { font-weight: 600; font-size: 0.85rem; color: var(--text-dark); }
+    .review-source { font-size: 0.75rem; color: var(--text-muted); margin-left: 4px; }
+    .service-area {
+      text-align: center;
+    }
+    .area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1.5rem;
+    }
+    .area-tag {
+      background: var(--brand-tint);
+      color: var(--brand-primary);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--brand-light);
+    }
+    .cta-section {
+      text-align: center;
+      background: var(--brand-tint);
+    }
     .cta-section h2 { margin-bottom: 0.75rem; }
     .cta-section p { margin: 0 auto 2rem; }
     .contact-grid {
@@ -202,29 +292,34 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      color: var(--text-secondary);
+      color: var(--text-body);
       font-size: 0.95rem;
     }
-    .contact-icon { font-size: 1.25rem; color: var(--prospect-accent); }
-
-    /* ===== FOOTER ===== */
+    .contact-icon { font-size: 1.25rem; color: var(--brand-primary); }
+    .financing-bar {
+      text-align: center;
+      padding: 40px 0;
+      background: var(--bg-light);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .financing-bar h3 { margin-bottom: 0.5rem; }
+    .financing-bar p { margin: 0 auto; font-size: 0.95rem; }
     footer {
-      background: #111127;
+      background: var(--text-dark);
       padding: 40px 0;
       text-align: center;
-      border-top: 1px solid var(--border);
     }
+    footer p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin: 0 auto; }
     .footer-bspoke {
-      color: var(--text-muted);
-      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+      font-size: 0.75rem;
       margin-top: 12px;
     }
-    .footer-bspoke a { color: var(--accent); text-decoration: none; }
-    .footer-bspoke a:hover { text-decoration: underline; }
-
-    /* ===== PREVIEW BANNER ===== */
+    .footer-bspoke a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .footer-bspoke a:hover { color: rgba(255,255,255,0.7); text-decoration: underline; }
     .preview-banner {
-      background: linear-gradient(135deg, var(--accent), #6366f1);
+      background: var(--brand-primary);
       color: #fff;
       text-align: center;
       padding: 12px 24px;
@@ -237,20 +332,24 @@
       z-index: 200;
     }
     .preview-banner a { color: #fff; text-decoration: underline; }
-
-    /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       section { padding: 60px 0; }
-      .hero { padding: 120px 0 80px; }
+      .hero { padding: 120px 0 70px; }
       .about-content { grid-template-columns: 1fr; gap: 32px; }
-      .stat-grid { grid-template-columns: repeat(3, 1fr); }
+      .stat-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+      .stat { padding: 16px 8px; }
+      .stat-number { font-size: 1.75rem; }
       .nav-links { display: none; }
       .nav-toggle { display: block; }
       .contact-grid { flex-direction: column; align-items: center; }
+      .trust-bar .container { gap: 16px; }
+      .cert-logos { gap: 16px; }
     }
     @media (max-width: 480px) {
       .container { padding: 0 16px; }
       .hero-cta { padding: 14px 32px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -264,7 +363,8 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li><a href="tel:4055137188" class="nav-cta">Call Now</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Menu">&#9776;</button>
     </div>
@@ -273,47 +373,70 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <h1>Trusted Sewer &amp; Drain Experts Serving OKC Since 1990</h1>
-      <p>35+ years of honest, licensed plumbing service. Same-day appointments, no hidden fees, no trip charges.</p>
-      <a href="tel:4055137188" class="hero-cta">Call (405) 513-7188</a>
+      <div class="emergency-badge">
+        <span class="pulse"></span> 24/7 Emergency Service Available
+      </div>
+      <h1>Oklahoma City&#8217;s Trusted Sewer &amp; Drain Experts</h1>
+      <p>35+ years of reliable service. Licensed, bonded, and insured. Call now for fast, honest plumbing.</p>
+      <a href="tel:4055137188" class="hero-cta">Call for Same-Day Service</a>
     </div>
   </section>
 
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-item"><span class="trust-icon">&#9989;</span> Licensed #004651</div>
+      <div class="trust-item"><span class="trust-icon">&#128736;</span> 35+ Years Experience</div>
+      <div class="trust-item"><span class="trust-icon">&#11088;</span> 4.1-Star Rated</div>
+      <div class="trust-item"><span class="trust-icon">&#9201;</span> 24/7 Emergency Service</div>
+    </div>
+  </div>
+
   <!-- SERVICES -->
-  <section id="services">
+  <section id="services" class="bg-light">
     <div class="container">
       <h2>Our Services</h2>
-      <p>From clogged drains to full sewer line replacements, MainStream handles residential and commercial plumbing jobs across the entire OKC metro. Licensed, bonded, and insured -- with 35+ years of hands-on experience.</p>
+      <p class="section-subtitle">From routine drain cleaning to emergency sewer repair, MainStream Sewer and Drain Service handles it all across the Oklahoma City metro.</p>
       <div class="services-grid">
         <div class="service-card">
-          <span class="service-icon">&#x1F6BF;</span>
-          <h3>Sewer &amp; Drain Cleaning</h3>
-          <p>Complete drain clearing for all pipe sizes, from 1.5" bathroom drains to 6" main sewer lines. We clear stubborn clogs fast so your water flows again.</p>
+          <span class="service-icon">&#128295;</span>
+          <h3>Sewer Line Cleaning &amp; Repair</h3>
+          <p>Complete sewer line service including root removal, pipe repair, and full line replacements to keep your system flowing.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#x1F4F9;</span>
-          <h3>Video Inspection &amp; Locating</h3>
-          <p>See exactly what's going on inside your pipes. Our sewer camera inspections pinpoint cracks, blockages, and root intrusions -- no guesswork, no unnecessary digging.</p>
+          <span class="service-icon">&#128249;</span>
+          <h3>Video Camera Inspection</h3>
+          <p>Advanced camera technology to pinpoint blockages, cracks, and damage inside your sewer and drain lines without digging.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#x1F527;</span>
-          <h3>Sewer Line Repair &amp; Replacement</h3>
-          <p>Broken or collapsed sewer line? We handle full excavation and replacement with minimal disruption to your property. Permanent fixes, not band-aids.</p>
+          <span class="service-icon">&#128167;</span>
+          <h3>Drain Cleaning</h3>
+          <p>Professional drain clearing for kitchens, bathrooms, and main lines. We get rid of clogs fast and keep them from coming back.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#x1F4A7;</span>
-          <h3>Slab Leak Detection &amp; Repair</h3>
-          <p>Hidden leaks under your foundation can cause serious damage. We locate and repair slab leaks quickly using proven detection methods -- saving your home and your water bill.</p>
+          <span class="service-icon">&#128293;</span>
+          <h3>Water Heater Repair</h3>
+          <p>Diagnosis, repair, and replacement for tank and tankless water heaters. No hot water? We&#8217;ll fix it today.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#x1F525;</span>
-          <h3>Water Heater Service</h3>
-          <p>Cold showers aren't an option. We repair and replace water heaters -- gas or electric -- with same-day service available so your hot water is back fast.</p>
+          <span class="service-icon">&#128269;</span>
+          <h3>Slab Leak Detection</h3>
+          <p>Non-invasive leak detection for under-slab pipes. We find the problem and fix it with minimal disruption to your home.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#x1F6E1;</span>
-          <h3>Gas Leak Detection &amp; Repair</h3>
-          <p>Smell gas? Don't wait. Our technicians respond quickly to locate and fix gas leaks safely, protecting your family and your property.</p>
+          <span class="service-icon">&#9888;</span>
+          <h3>Gas Leak Detection</h3>
+          <p>Licensed gas line inspection and leak detection to keep your family safe. Fast response for suspected gas leaks.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">&#128680;</span>
+          <h3>Emergency Plumbing</h3>
+          <p>Burst pipes, sewage backups, and flooding don&#8217;t wait &#8212; and neither do we. Available 24/7 for plumbing emergencies.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">&#127960;</span>
+          <h3>Remodeling Plumbing</h3>
+          <p>New construction and remodel plumbing for kitchens, bathrooms, and whole-home projects. Built to code, every time.</p>
         </div>
       </div>
     </div>
@@ -325,8 +448,8 @@
       <div class="about-content">
         <div class="about-text">
           <h2>Why Choose MainStream Sewer and Drain Service</h2>
-          <p>Owner-operator Greg Mullin started MainStream in 1990, and he's still out on jobs today. With 35+ years in the trade, this isn't a call center operation -- it's a team of experienced plumbers who know Oklahoma City's pipes, soil, and building codes inside and out.</p>
-          <p>MainStream serves homeowners and businesses across the entire OKC metro, from Edmond to Moore to Midwest City. No trip charges, no hidden fees, and a reputation built on repeat customers who keep calling back because the work is done right the first time.</p>
+          <p>Founded by Greg M. Mullin in 1994, MainStream Sewer and Drain Service has been solving plumbing problems across the Oklahoma City metro for over 35 years. As a licensed Oklahoma plumber (#004651), Greg and his team bring decades of hands-on experience to every job &#8212; big or small.</p>
+          <p>MainStream is built on straight talk, fair pricing, and work that lasts. From emergency calls in the middle of the night to planned remodels, this team shows up on time, explains what needs to happen, and gets it done right. That&#8217;s why OKC homeowners keep calling back.</p>
         </div>
         <div>
           <div class="stat-grid">
@@ -335,12 +458,12 @@
               <span class="stat-label">Years Experience</span>
             </div>
             <div class="stat">
-              <span class="stat-number">All OKC</span>
-              <span class="stat-label">Metro Covered</span>
+              <span class="stat-number">4.1&#9733;</span>
+              <span class="stat-label">Google Rating (42 Reviews)</span>
             </div>
             <div class="stat">
-              <span class="stat-number">Same-Day</span>
-              <span class="stat-label">Service Available</span>
+              <span class="stat-number">FREE</span>
+              <span class="stat-label">Estimates &#8212; No Trip Charges</span>
             </div>
           </div>
         </div>
@@ -348,41 +471,88 @@
     </div>
   </section>
 
-  <!-- REVIEWS -->
-  <section id="reviews">
+  <!-- CERTIFICATIONS -->
+  <div class="cert-bar bg-light">
     <div class="container">
-      <h2>What Customers Say</h2>
-      <p>Real reviews from real customers.</p>
+      <h3>Licensed &amp; Certified</h3>
+      <div class="cert-logos">
+        <span>&#128737; Licensed Plumber OK #004651</span>
+        <span>&#9989; Bonded &amp; Insured</span>
+        <span>&#127942; Edmond Chamber Member</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="bg-tint">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <p class="section-subtitle">Real reviews from real customers.</p>
       <div class="reviews-grid">
         <div class="review-card">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-text">"Outstanding job every time. They are professional and courteous. I have used them multiple times and will continue to do so."</p>
-          <span class="review-author">- Jeff Canaday, Google</span>
+          <p class="review-text">"We have used Stone Creek on many different plumbing situations and they have done an outstanding job every time. We sure appreciate everything they have done for us."</p>
+          <span class="review-author">&#8212; Jeff Canaday</span>
+          <span class="review-source">(Google)</span>
         </div>
         <div class="review-card">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-text">"Called about a water heater emergency and they had someone out within the hour. Fast, fair pricing, and the tech explained everything. Highly recommend."</p>
-          <span class="review-author">- Wes Veitch, Google</span>
+          <p class="review-text">"They texted me first thing this morning... Jace came right at 11, found the crack in my tank... I went and got one myself they could maybe install it today..."</p>
+          <span class="review-author">&#8212; Wes Veitch</span>
+          <span class="review-source">(Google)</span>
         </div>
         <div class="review-card">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-text">"A supervisor was here within 2 hours and a worker was digging up the mess within the next 45 minutes. The worker informed me along the way what he was doing, where the failure was and its cause. I can't imagine this situation going any better!"</p>
-          <span class="review-author">- Joanna M., Angi</span>
+          <p class="review-text">"A supervisor was here within 2 hours and a worker was digging up the mess within the next 45 minutes. I was very grateful they were quick to respond... The worker informed me along the way what he was doing... I can&#8217;t imagine this situation going any better!"</p>
+          <span class="review-author">&#8212; Joanna M.</span>
+          <span class="review-source">(Angi)</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SERVICE AREA -->
+  <section id="area" class="service-area">
+    <div class="container">
+      <h2>Serving the Oklahoma City Metro Area</h2>
+      <p class="section-subtitle">Proudly serving these communities and surrounding areas.</p>
+      <div class="area-tags">
+        <span class="area-tag">Oklahoma City</span>
+        <span class="area-tag">Edmond</span>
+        <span class="area-tag">Norman</span>
+        <span class="area-tag">Moore</span>
+        <span class="area-tag">Yukon</span>
+        <span class="area-tag">Mustang</span>
+        <span class="area-tag">Bethany</span>
+        <span class="area-tag">Midwest City</span>
+        <span class="area-tag">Del City</span>
+        <span class="area-tag">South OKC</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINANCING -->
+  <div class="financing-bar">
+    <div class="container">
+      <h3>Flexible Financing Available</h3>
+      <p>We offer financing options to fit your budget. Ask about our payment plans when you call.</p>
+    </div>
+  </div>
+
   <!-- CONTACT / CTA -->
   <section id="contact" class="cta-section">
     <div class="container">
-      <h2>Ready to Get Started?</h2>
-      <p>Need a sewer or drain fixed fast? MainStream offers free estimates with no trip charges across the entire OKC metro.</p>
+      <h2>Need a Plumber? We&#8217;re Ready.</h2>
+      <p class="section-subtitle">Fast response times, upfront pricing, and quality work guaranteed. Call today.</p>
       <a href="tel:4055137188" class="hero-cta">Call (405) 513-7188</a>
       <div class="contact-grid">
         <div class="contact-item">
           <span class="contact-icon">&#9742;</span>
           <span>(405) 513-7188</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#9993;</span>
+          <span>stonecreekplumbing@gmail.com</span>
         </div>
         <div class="contact-item">
           <span class="contact-icon">&#9906;</span>
@@ -395,14 +565,14 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; 2026 MainStream Sewer and Drain Service. All rights reserved.</p>
-      <p class="footer-bspoke">Website preview built by <a href="https://bspoke.studio" target="_blank">b.spoke</a></p>
+      <p>&copy; 2026 MainStream Sewer and Drain Service. All rights reserved.</p>
+      <p class="footer-bspoke">Website preview by <a href="https://bspoke.studio" target="_blank">b.spoke</a></p>
     </div>
   </footer>
 
   <!-- PREVIEW BANNER -->
   <div class="preview-banner">
-    This is a free website preview built by <a href="https://bspoke.studio">b.spoke</a>. Like what you see? Let's make it yours.
+    This is a free website preview built by <a href="https://bspoke.studio">b.spoke</a>. Like what you see? Let&#8217;s make it yours.
   </div>
 
   <!-- MOBILE NAV TOGGLE -->
@@ -411,16 +581,20 @@
     const links = document.querySelector('.nav-links');
     if (toggle && links) {
       toggle.addEventListener('click', () => {
-        links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-        links.style.flexDirection = 'column';
-        links.style.position = 'absolute';
-        links.style.top = '100%';
-        links.style.left = '0';
-        links.style.right = '0';
-        links.style.background = 'rgba(26,26,46,0.95)';
-        links.style.padding = '24px';
-        links.style.gap = '16px';
-        links.style.borderBottom = '1px solid #2d3748';
+        const isOpen = links.style.display === 'flex';
+        links.style.display = isOpen ? 'none' : 'flex';
+        if (!isOpen) {
+          links.style.flexDirection = 'column';
+          links.style.position = 'absolute';
+          links.style.top = '100%';
+          links.style.left = '0';
+          links.style.right = '0';
+          links.style.background = 'rgba(255,255,255,0.98)';
+          links.style.padding = '24px';
+          links.style.gap = '16px';
+          links.style.borderBottom = '1px solid #e2e8f0';
+          links.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
+        }
       });
     }
   </script>
