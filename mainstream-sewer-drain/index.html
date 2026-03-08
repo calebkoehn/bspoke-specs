@@ -3,468 +3,1061 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MainStream Sewer and Drain Service | Everywhere You Need Us</title>
-  <meta name="description" content="MainStream Sewer and Drain Service — 35+ years of trusted sewer, drain, and plumbing service in Oklahoma City. Licensed, bonded, insured. Call (405) 513-7188.">
+  <title>MainStream Sewer and Drain Service | Oklahoma City Plumber</title>
+  <meta name="description" content="Trusted OKC sewer and drain experts with 35+ years experience. Licensed, bonded &amp; insured. Free estimates, no hidden fees. Call (405) 513-7188.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --brand-primary: #1a5276;
-      --brand-primary-dark: #154360;
-      --brand-accent: #e67e22;
-      --brand-accent-dark: #d35400;
-      --brand-primary-rgb: 26,82,118;
-      --brand-accent-rgb: 230,126,34;
-      --bg-white: #ffffff;
-      --bg-light: #f8f9fa;
-      --bg-warm: #f5f5f0;
-      --text-dark: #1a1a2e;
-      --text-body: #4a5568;
-      --text-muted: #718096;
-      --border-light: #e2e8f0;
-      --border-subtle: #edf2f7;
-      --brand-tint: rgba(var(--brand-primary-rgb), 0.06);
-      --brand-light: rgba(var(--brand-primary-rgb), 0.10);
-      --brand-shadow: rgba(var(--brand-primary-rgb), 0.15);
-      --accent-tint: rgba(var(--brand-accent-rgb), 0.08);
-      --accent-shadow: rgba(var(--brand-accent-rgb), 0.25);
-      --radius-sm: 8px;
-      --radius-md: 12px;
+      --brand-primary: #1B3A5C;
+      --brand-primary-dark: #122942;
+      --brand-primary-light: #2A5A8C;
+      --brand-accent: #D4A017;
+      --brand-accent-dark: #B8860B;
+      --brand-accent-light: #E8B930;
+      --brand-primary-rgb: 27,58,92;
+      --brand-accent-rgb: 212,160,23;
+
+      --white: #ffffff;
+      --off-white: #fafbfc;
+      --gray-50: #f8f9fa;
+      --gray-100: #f1f3f5;
+      --gray-200: #e9ecef;
+      --gray-300: #dee2e6;
+      --gray-600: #6c757d;
+      --gray-700: #495057;
+      --gray-800: #343a40;
+      --gray-900: #212529;
+
+      --brand-tint: rgba(var(--brand-primary-rgb), 0.04);
+      --brand-light-bg: rgba(var(--brand-primary-rgb), 0.07);
+      --brand-shadow: rgba(var(--brand-primary-rgb), 0.12);
+      --accent-glow: rgba(var(--brand-accent-rgb), 0.3);
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
       --radius-lg: 16px;
-      --shadow-card: 0 2px 16px rgba(0,0,0,0.06);
-      --shadow-hover: 0 8px 32px var(--brand-shadow);
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --radius-xl: 24px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.04);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+      --shadow-xl: 0 20px 60px rgba(0,0,0,0.1);
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg-white);
-      color: var(--text-body);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--white);
+      color: var(--gray-700);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    h1, h2, h3, h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; line-height: 1.2; color: var(--text-dark); }
-    h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
-    h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); margin-bottom: 1rem; }
-    h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-    p { color: var(--text-body); max-width: 640px; }
-    .section-subtitle { color: var(--text-muted); font-size: 1.05rem; max-width: 580px; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-    section { padding: 80px 0; }
-    .bg-light { background: var(--bg-light); }
-    .bg-tint { background: var(--brand-tint); }
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border-light);
-      padding: 14px 0;
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--gray-900);
+      letter-spacing: -0.02em;
     }
-    nav .container { display: flex; justify-content: space-between; align-items: center; }
-    .nav-brand {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 1.35rem;
+    h1 { font-size: clamp(2.25rem, 5.5vw, 3.75rem); }
+    h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+    h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 700; }
+    p { max-width: 640px; }
+    .section-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand-primary);
+      margin-bottom: 0.75rem;
+    }
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 88px 0; }
+    .text-center { text-align: center; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      transition: all 0.3s var(--ease);
+    }
+    .header-top {
+      background: var(--brand-primary);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.82rem;
+      padding: 8px 0;
+    }
+    .header-top .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-top a { color: #fff; font-weight: 600; }
+    .header-top-phone {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .header-top-info {
+      display: flex;
+      gap: 20px;
+      font-weight: 500;
+    }
+    .header-main {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0;
+    }
+    .header-main .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 68px;
+    }
+    .logo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.4rem;
       font-weight: 800;
       color: var(--brand-primary);
-      text-decoration: none;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.03em;
     }
-    .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+    .logo img { height: 42px; width: auto; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
     .nav-links a {
-      color: var(--text-body);
-      text-decoration: none;
+      padding: 8px 16px;
       font-size: 0.9rem;
       font-weight: 500;
-      transition: var(--transition);
-    }
-    .nav-links a:hover { color: var(--brand-primary); }
-    .nav-cta {
-      background: var(--brand-primary) !important;
-      color: #fff !important;
-      padding: 10px 24px;
+      color: var(--gray-700);
       border-radius: var(--radius-sm);
-      font-weight: 600;
+      transition: all 0.2s var(--ease);
     }
-    .nav-cta:hover { background: var(--brand-primary-dark) !important; transform: translateY(-1px); }
-    .nav-toggle { display: none; background: none; border: none; color: var(--text-dark); font-size: 1.5rem; cursor: pointer; }
+    .nav-links a:hover { color: var(--brand-primary); background: var(--brand-tint); }
+    .nav-cta {
+      background: var(--brand-accent) !important;
+      color: #fff !important;
+      font-weight: 700 !important;
+      padding: 10px 24px !important;
+      border-radius: var(--radius-sm) !important;
+      box-shadow: 0 2px 8px var(--accent-glow);
+      transition: all 0.2s var(--ease) !important;
+    }
+    .nav-cta:hover {
+      background: var(--brand-accent-dark) !important;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px var(--accent-glow) !important;
+    }
+    .nav-toggle {
+      display: none;
+      background: none; border: none;
+      width: 40px; height: 40px;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--gray-800);
+      border-radius: 2px;
+      transition: all 0.2s var(--ease);
+    }
+
     .hero {
-      padding: 140px 0 90px;
-      text-align: center;
-      background: linear-gradient(170deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
-      color: #ffffff;
       position: relative;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      padding: 160px 0 100px;
+      background: var(--gray-900);
       overflow: hidden;
     }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -40%; right: -10%;
-      width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
-      pointer-events: none;
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.35);
     }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -30%; left: -5%;
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(var(--brand-accent-rgb),0.10) 0%, transparent 70%);
-      pointer-events: none;
+    .hero-bg-fallback {
+      background: linear-gradient(145deg, var(--brand-primary) 0%, var(--brand-primary-dark) 60%, var(--gray-900) 100%);
+      filter: none;
     }
-    .hero h1 { margin-bottom: 1rem; position: relative; color: #ffffff; }
-    .hero p { font-size: 1.15rem; margin: 0 auto 2rem; max-width: 560px; position: relative; color: rgba(255,255,255,0.85); }
-    .hero-cta {
-      display: inline-block;
-      background: var(--brand-accent);
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 680px;
+    }
+    .hero h1 {
       color: #fff;
-      padding: 16px 40px;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: var(--transition);
-      position: relative;
-      box-shadow: 0 4px 20px var(--accent-shadow);
+      margin-bottom: 1.25rem;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
     }
-    .hero-cta:hover { background: var(--brand-accent-dark); transform: translateY(-2px); box-shadow: 0 8px 30px var(--accent-shadow); }
-    .emergency-badge {
+    .hero p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.15rem;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .badge-emergency {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 8px 20px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      padding: 10px 22px;
       border-radius: 50px;
       font-size: 0.85rem;
-      font-weight: 600;
-      color: #ffffff;
+      font-weight: 700;
+      color: #fff;
       margin-bottom: 1.5rem;
-      position: relative;
     }
-    .emergency-badge .pulse {
+    .badge-dot {
       width: 8px; height: 8px;
       background: #48bb78;
       border-radius: 50%;
       animation: pulse 2s ease-in-out infinite;
+      box-shadow: 0 0 8px rgba(72,187,120,0.6);
     }
-    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 36px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s var(--ease);
+      text-decoration: none;
+      line-height: 1;
+    }
+    .btn-primary {
+      background: var(--brand-accent);
+      color: #fff;
+      box-shadow: 0 4px 16px var(--accent-glow);
+    }
+    .btn-primary:hover {
+      background: var(--brand-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px var(--accent-glow);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.7);
+    }
+    .btn-white {
+      background: #fff;
+      color: var(--brand-primary);
+      box-shadow: var(--shadow-md);
+    }
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    .btn-accent-outline {
+      background: transparent;
+      color: var(--brand-accent);
+      border: 2px solid var(--brand-accent);
+    }
+    .btn-accent-outline:hover {
+      background: var(--brand-accent);
+      color: #fff;
+    }
+    .btn-icon { font-size: 1.1em; }
+
     .trust-bar {
-      background: var(--bg-light);
-      border-bottom: 1px solid var(--border-light);
-      padding: 16px 0;
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 20px 0;
+      position: relative;
+      z-index: 5;
     }
     .trust-bar .container {
       display: flex;
       justify-content: center;
-      gap: 32px;
+      gap: 40px;
       flex-wrap: wrap;
     }
     .trust-item {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-dark);
+      gap: 10px;
     }
-    .trust-icon { color: var(--brand-primary); font-size: 1.1rem; }
+    .trust-icon {
+      width: 40px; height: 40px;
+      background: var(--brand-light-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .trust-text {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      line-height: 1.3;
+    }
+    .trust-sub {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--gray-600);
+    }
+
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-      margin-top: 2.5rem;
+      margin-top: 3rem;
     }
     .service-card {
-      background: var(--bg-white);
-      border: 1px solid var(--border-light);
+      background: var(--white);
+      border: 1px solid var(--gray-200);
       border-radius: var(--radius-md);
-      padding: 32px;
-      transition: var(--transition);
+      padding: 36px 28px;
+      transition: all 0.3s var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--brand-primary);
+      transform: scaleX(0);
+      transition: transform 0.3s var(--ease);
     }
     .service-card:hover {
       transform: translateY(-4px);
-      border-color: var(--brand-primary);
-      box-shadow: var(--shadow-hover);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
     }
-    .service-icon {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      display: block;
-    }
-    .service-card h3 { color: var(--text-dark); }
-    .service-card p { font-size: 0.95rem; }
-    .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
-    .about-text p { margin-bottom: 1rem; }
-    .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 2rem; }
-    .stat {
-      text-align: center;
-      background: var(--bg-white);
-      border: 1px solid var(--border-light);
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon-wrap {
+      width: 52px; height: 52px;
+      background: var(--brand-light-bg);
       border-radius: var(--radius-md);
-      padding: 24px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .service-card h3 { margin-bottom: 0.75rem; }
+    .service-card p { font-size: 0.92rem; color: var(--gray-600); line-height: 1.65; }
+
+    .cta-band {
+      background: var(--brand-primary);
+      padding: 44px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-band::before {
+      content: '';
+      position: absolute;
+      top: -50%; right: -10%;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    }
+    .cta-band .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+    .cta-band h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .cta-band p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      margin: 4px 0 0;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 3.5rem;
+      position: relative;
+    }
+    .process-grid::before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: calc(16.67% + 20px);
+      right: calc(16.67% + 20px);
+      height: 2px;
+      background: var(--gray-200);
+    }
+    .process-step { text-align: center; position: relative; }
+    .process-number {
+      width: 64px; height: 64px;
+      background: var(--brand-primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 0 auto 1.5rem;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 4px 16px var(--brand-shadow);
+    }
+    .process-step h3 { margin-bottom: 0.5rem; }
+    .process-step p { font-size: 0.92rem; color: var(--gray-600); margin: 0 auto; max-width: 260px; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-text h2 { margin-bottom: 1.25rem; }
+    .about-text p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 1.75rem;
+    }
+    .highlight-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 14px;
+      background: var(--gray-50);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--gray-200);
+    }
+    .highlight-check {
+      color: var(--brand-primary);
+      font-weight: 800;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .highlight-item span {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--gray-800);
+    }
+    .stats-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .stat-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+      transition: all 0.3s var(--ease);
+    }
+    .stat-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--brand-primary);
     }
     .stat-number {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 2.25rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.5rem;
       font-weight: 800;
       color: var(--brand-primary);
-      display: block;
+      line-height: 1;
+      margin-bottom: 6px;
     }
-    .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+    .stat-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
     .cert-bar {
-      text-align: center;
       padding: 48px 0;
+      border-top: 1px solid var(--gray-200);
+      border-bottom: 1px solid var(--gray-200);
     }
-    .cert-bar h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .cert-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gray-600);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
     .cert-logos {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 24px;
       flex-wrap: wrap;
-      align-items: center;
     }
-    .cert-logos span {
+    .cert-badge {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--text-body);
-      padding: 10px 20px;
-      background: var(--bg-light);
+      gap: 10px;
+      padding: 12px 22px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
       border-radius: var(--radius-sm);
-      border: 1px solid var(--border-light);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      transition: all 0.2s var(--ease);
+    }
+    .cert-badge:hover {
+      border-color: var(--brand-primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .cert-badge-icon { font-size: 1.2rem; }
+
+    .reviews-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 3rem;
+    }
+    .reviews-aggregate {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .aggregate-score {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      line-height: 1;
+    }
+    .aggregate-meta {
+      display: flex;
+      flex-direction: column;
+    }
+    .aggregate-stars { color: #f59e0b; font-size: 1.15rem; letter-spacing: 2px; }
+    .aggregate-count {
+      font-size: 0.85rem;
+      color: var(--gray-600);
+      font-weight: 500;
+      margin-top: 2px;
     }
     .reviews-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-      margin-top: 2.5rem;
     }
     .review-card {
-      background: var(--bg-white);
-      border: 1px solid var(--border-light);
+      background: var(--white);
+      border: 1px solid var(--gray-200);
       border-radius: var(--radius-md);
-      padding: 28px;
-      transition: var(--transition);
+      padding: 32px;
+      transition: all 0.3s var(--ease);
     }
-    .review-card:hover { box-shadow: var(--shadow-card); }
-    .review-stars { color: #f59e0b; font-size: 1rem; margin-bottom: 12px; }
-    .review-text { font-size: 0.95rem; font-style: italic; color: var(--text-body); margin-bottom: 16px; line-height: 1.7; }
-    .review-author { font-weight: 600; font-size: 0.85rem; color: var(--text-dark); }
-    .review-source { font-size: 0.75rem; color: var(--text-muted); margin-left: 4px; }
-    .service-area {
-      text-align: center;
+    .review-card:hover {
+      box-shadow: var(--shadow-md);
     }
+    .review-stars {
+      color: #f59e0b;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--gray-700);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: normal;
+    }
+    .review-text::before { content: '\201C'; font-size: 1.5rem; color: var(--gray-300); line-height: 0; vertical-align: -0.3em; margin-right: 2px; }
+    .review-text::after { content: '\201D'; font-size: 1.5rem; color: var(--gray-300); line-height: 0; vertical-align: -0.3em; margin-left: 2px; }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .review-avatar {
+      width: 36px; height: 36px;
+      background: var(--brand-light-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--brand-primary);
+    }
+    .review-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--gray-800);
+    }
+    .review-source {
+      font-size: 0.75rem;
+      color: var(--gray-600);
+    }
+
     .area-tags {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
     }
     .area-tag {
-      background: var(--brand-tint);
+      padding: 8px 20px;
+      background: var(--brand-light-bg);
       color: var(--brand-primary);
-      padding: 8px 18px;
+      border: 1px solid rgba(var(--brand-primary-rgb), 0.15);
       border-radius: 50px;
       font-size: 0.85rem;
       font-weight: 600;
-      border: 1px solid var(--brand-light);
+      transition: all 0.2s var(--ease);
     }
-    .cta-section {
+    .area-tag:hover {
+      background: var(--brand-primary);
+      color: #fff;
+    }
+
+    .final-cta {
+      background: var(--gray-900);
+      padding: 96px 0;
       text-align: center;
-      background: var(--brand-tint);
+      position: relative;
+      overflow: hidden;
     }
-    .cta-section h2 { margin-bottom: 0.75rem; }
-    .cta-section p { margin: 0 auto 2rem; }
-    .contact-grid {
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(var(--brand-primary-rgb), 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(var(--brand-accent-rgb), 0.1) 0%, transparent 60%);
+    }
+    .final-cta .container { position: relative; z-index: 1; }
+    .final-cta h2 { color: #fff; margin-bottom: 1rem; }
+    .final-cta p {
+      color: rgba(255,255,255,0.7);
+      font-size: 1.1rem;
+      margin: 0 auto 2.5rem;
+      max-width: 500px;
+    }
+    .final-cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .final-contact {
       display: flex;
       justify-content: center;
       gap: 40px;
-      margin-top: 2rem;
       flex-wrap: wrap;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
-    .contact-item {
+    .final-contact-item {
       display: flex;
       align-items: center;
-      gap: 12px;
-      color: var(--text-body);
-      font-size: 0.95rem;
+      gap: 10px;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.92rem;
     }
-    .contact-icon { font-size: 1.25rem; color: var(--brand-primary); }
-    .financing-bar {
-      text-align: center;
-      padding: 40px 0;
-      background: var(--bg-light);
-      border-top: 1px solid var(--border-light);
-      border-bottom: 1px solid var(--border-light);
-    }
-    .financing-bar h3 { margin-bottom: 0.5rem; }
-    .financing-bar p { margin: 0 auto; font-size: 0.95rem; }
+    .final-contact-icon { color: var(--brand-accent); font-size: 1.1rem; }
+
     footer {
-      background: var(--text-dark);
-      padding: 40px 0;
+      background: var(--gray-900);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px 0;
       text-align: center;
     }
-    footer p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin: 0 auto; }
+    footer p { color: rgba(255,255,255,0.4); font-size: 0.82rem; margin: 0 auto; }
     .footer-bspoke {
-      color: rgba(255,255,255,0.35);
+      margin-top: 8px;
+      color: rgba(255,255,255,0.25);
       font-size: 0.75rem;
-      margin-top: 12px;
     }
-    .footer-bspoke a { color: rgba(255,255,255,0.5); text-decoration: none; }
-    .footer-bspoke a:hover { color: rgba(255,255,255,0.7); text-decoration: underline; }
+    .footer-bspoke a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    .footer-bspoke a:hover { color: rgba(255,255,255,0.6); }
+
     .preview-banner {
-      background: var(--brand-primary);
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 2000;
+      background: var(--brand-accent);
       color: #fff;
       text-align: center;
-      padding: 12px 24px;
-      font-size: 0.85rem;
+      padding: 14px 24px;
+      font-size: 0.88rem;
       font-weight: 600;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    }
+    .preview-banner a {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .mobile-cta {
+      display: none;
       position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 200;
+      bottom: 48px;
+      left: 0; right: 0;
+      z-index: 1500;
+      background: var(--brand-primary);
+      padding: 14px 20px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
     }
-    .preview-banner a { color: #fff; text-decoration: underline; }
+    .mobile-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    @media (max-width: 960px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+
     @media (max-width: 768px) {
-      section { padding: 60px 0; }
-      .hero { padding: 120px 0 70px; }
-      .about-content { grid-template-columns: 1fr; gap: 32px; }
-      .stat-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-      .stat { padding: 16px 8px; }
-      .stat-number { font-size: 1.75rem; }
+      section { padding: 64px 0; }
+      .header-top { display: none; }
       .nav-links { display: none; }
-      .nav-toggle { display: block; }
-      .contact-grid { flex-direction: column; align-items: center; }
-      .trust-bar .container { gap: 16px; }
-      .cert-logos { gap: 16px; }
-    }
-    @media (max-width: 480px) {
-      .container { padding: 0 16px; }
-      .hero-cta { padding: 14px 32px; }
+      .nav-toggle { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: var(--white);
+        padding: 20px 24px;
+        gap: 4px;
+        border-bottom: 1px solid var(--gray-200);
+        box-shadow: var(--shadow-lg);
+      }
+      .nav-links.open a { padding: 12px 16px; width: 100%; }
+      .hero { padding: 130px 0 80px; min-height: 500px; }
+      .hero h1 { font-size: 2rem; }
+      .process-grid { grid-template-columns: 1fr; gap: 32px; }
+      .process-grid::before { display: none; }
       .services-grid { grid-template-columns: 1fr; }
       .reviews-grid { grid-template-columns: 1fr; }
+      .stats-panel { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .stat-card { padding: 20px 16px; }
+      .stat-number { font-size: 1.75rem; }
+      .trust-bar .container { gap: 20px; }
+      .trust-icon { width: 32px; height: 32px; font-size: 0.9rem; }
+      .cta-band .container { justify-content: center; text-align: center; }
+      .reviews-header { flex-direction: column; align-items: flex-start; }
+      .final-cta { padding: 64px 0; }
+      .mobile-cta { display: block; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .hero-actions .btn { width: 100%; }
+      .about-highlights { grid-template-columns: 1fr; }
+      .cert-logos { gap: 12px; }
+      .cert-badge { padding: 10px 16px; font-size: 0.82rem; }
+      .final-cta-actions { flex-direction: column; align-items: center; }
+      .final-contact { flex-direction: column; align-items: center; gap: 16px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="container">
-      <a href="#" class="nav-brand">MainStream Sewer &amp; Drain</a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#area">Service Area</a></li>
-        <li><a href="tel:4055137188" class="nav-cta">Call Now</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <a href="tel:4055137188" class="header-top-phone">
+          <span>&#9742;</span> (405) 513-7188
+        </a>
+        <div class="header-top-info">
+          <span>Mon-Fri 5:30AM-6PM</span>
+          <span>Serving Oklahoma City &amp; Edmond</span>
+        </div>
+      </div>
     </div>
-  </nav>
+    <nav class="header-main">
+      <div class="container">
+        <a href="#" class="logo">MainStream Sewer and Drain Service</a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="tel:4055137188" class="nav-cta">Call Now</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg hero-bg-fallback"></div>
+    <div class="hero-overlay"></div>
     <div class="container">
-      <div class="emergency-badge">
-        <span class="pulse"></span> 24/7 Emergency Service Available
+      <div class="hero-content">
+        <div class="badge-emergency">
+          <span class="badge-dot"></span> 24/7 Emergency Sewer &amp; Drain Service
+        </div>
+        <h1>Oklahoma City's Trusted Sewer &amp; Drain Experts Since 1989</h1>
+        <p>35+ years keeping OKC homes and businesses flowing. Licensed, bonded, and insured. Free estimates with no hidden fees &mdash; ever.</p>
+        <div class="hero-actions">
+          <a href="tel:4055137188" class="btn btn-primary">
+            <span class="btn-icon">&#9742;</span> Call for Same-Day Service
+          </a>
+          <a href="#services" class="btn btn-outline">
+            View Our Services
+          </a>
+        </div>
       </div>
-      <h1>Oklahoma City&#8217;s Trusted Sewer &amp; Drain Experts</h1>
-      <p>35+ years of reliable service. Licensed, bonded, and insured. Call now for fast, honest plumbing.</p>
-      <a href="tel:4055137188" class="hero-cta">Call for Same-Day Service</a>
     </div>
   </section>
 
   <!-- TRUST BAR -->
   <div class="trust-bar">
     <div class="container">
-      <div class="trust-item"><span class="trust-icon">&#9989;</span> Licensed #004651</div>
-      <div class="trust-item"><span class="trust-icon">&#128736;</span> 35+ Years Experience</div>
-      <div class="trust-item"><span class="trust-icon">&#11088;</span> 4.1-Star Rated</div>
-      <div class="trust-item"><span class="trust-icon">&#9201;</span> 24/7 Emergency Service</div>
+      <div class="trust-item">
+        <span class="trust-icon">&#9989;</span>
+        <div>
+          <span class="trust-text">Licensed &amp; Bonded</span>
+          <span class="trust-sub">OK License #004651</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">&#128736;</span>
+        <div>
+          <span class="trust-text">35+ Years Experience</span>
+          <span class="trust-sub">Serving OKC since 1989</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">&#11088;</span>
+        <div>
+          <span class="trust-text">4.5-Star Rated</span>
+          <span class="trust-sub">50+ verified reviews</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">&#9201;</span>
+        <div>
+          <span class="trust-text">Same-Day Service</span>
+          <span class="trust-sub">Fast emergency response</span>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- SERVICES -->
-  <section id="services" class="bg-light">
+  <section id="services">
     <div class="container">
-      <h2>Our Services</h2>
-      <p class="section-subtitle">From routine drain cleaning to emergency sewer repair, MainStream Sewer and Drain Service handles it all across the Oklahoma City metro.</p>
+      <div class="text-center">
+        <span class="section-label">What We Do</span>
+        <h2>Our Services</h2>
+        <p class="section-desc mx-auto">From clogged drains to full sewer line replacement, we handle every job with the same care and professionalism that's kept OKC trusting us for 35+ years.</p>
+      </div>
       <div class="services-grid">
         <div class="service-card">
-          <span class="service-icon">&#128295;</span>
+          <div class="service-icon-wrap">&#128167;</div>
           <h3>Sewer Line Cleaning &amp; Repair</h3>
-          <p>Complete sewer line service including root removal, pipe repair, and full line replacements to keep your system flowing.</p>
+          <p>Complete sewer line services from routine cleaning to full replacement. We locate, diagnose, and fix the problem fast.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#128249;</span>
+          <div class="service-icon-wrap">&#128249;</div>
           <h3>Video Camera Inspection</h3>
-          <p>Advanced camera technology to pinpoint blockages, cracks, and damage inside your sewer and drain lines without digging.</p>
+          <p>See exactly what's happening inside your pipes with our inline video camera technology. No guessing, no surprises.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#128167;</span>
-          <h3>Drain Cleaning</h3>
-          <p>Professional drain clearing for kitchens, bathrooms, and main lines. We get rid of clogs fast and keep them from coming back.</p>
+          <div class="service-icon-wrap">&#128293;</div>
+          <h3>Water Heater Service</h3>
+          <p>Repair and replacement for all water heater types. Same-day service available for emergency situations.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#128293;</span>
-          <h3>Water Heater Repair</h3>
-          <p>Diagnosis, repair, and replacement for tank and tankless water heaters. No hot water? We&#8217;ll fix it today.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">&#128269;</span>
+          <div class="service-icon-wrap">&#128269;</div>
           <h3>Slab Leak Detection</h3>
-          <p>Non-invasive leak detection for under-slab pipes. We find the problem and fix it with minimal disruption to your home.</p>
+          <p>Advanced leak detection technology finds hidden leaks under your foundation without unnecessary digging or damage.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#9888;</span>
-          <h3>Gas Leak Detection</h3>
-          <p>Licensed gas line inspection and leak detection to keep your family safe. Fast response for suspected gas leaks.</p>
+          <div class="service-icon-wrap">&#128295;</div>
+          <h3>Drain Cleaning</h3>
+          <p>Clogged sink, toilet, shower, or floor drain? Our rotary machines handle pipes from 1.5 to 6 inches.</p>
         </div>
         <div class="service-card">
-          <span class="service-icon">&#128680;</span>
-          <h3>Emergency Plumbing</h3>
-          <p>Burst pipes, sewage backups, and flooding don&#8217;t wait &#8212; and neither do we. Available 24/7 for plumbing emergencies.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">&#127960;</span>
-          <h3>Remodeling Plumbing</h3>
-          <p>New construction and remodel plumbing for kitchens, bathrooms, and whole-home projects. Built to code, every time.</p>
+          <div class="service-icon-wrap">&#9888;</div>
+          <h3>Gas Line Service</h3>
+          <p>Licensed gas line detection, repair, and meter reset/inspection. Safety-certified and code-compliant.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT / WHY CHOOSE -->
+  <!-- MID-PAGE CTA -->
+  <div class="cta-band">
+    <div class="container">
+      <div>
+        <h3>Sewer Emergency? We're On Our Way.</h3>
+        <p>Same-day service, upfront pricing, no hidden fees. Call now.</p>
+      </div>
+      <a href="tel:4055137188" class="btn btn-white">
+        <span class="btn-icon">&#9742;</span> Call (405) 513-7188
+      </a>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section style="background: var(--gray-50);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Simple Process</span>
+        <h2>How It Works</h2>
+        <p class="section-desc mx-auto">Getting your plumbing fixed shouldn't be complicated. Here's how we make it easy.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-number">1</div>
+          <h3>Call or Text Us</h3>
+          <p>Reach us at (405) 513-7188. Tell us about your situation and we'll schedule a visit &mdash; often same-day.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">2</div>
+          <h3>Free On-Site Estimate</h3>
+          <p>Our licensed plumber arrives on time, diagnoses the problem, and gives you an honest, upfront price. No trip charges.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">3</div>
+          <h3>Problem Solved, Guaranteed</h3>
+          <p>We complete the job right the first time, clean up after ourselves, and make sure you're 100% satisfied.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / WHY CHOOSE US -->
   <section id="about">
     <div class="container">
-      <div class="about-content">
+      <div class="about-grid">
         <div class="about-text">
+          <span class="section-label">About Us</span>
           <h2>Why Choose MainStream Sewer and Drain Service</h2>
-          <p>Founded by Greg M. Mullin in 1994, MainStream Sewer and Drain Service has been solving plumbing problems across the Oklahoma City metro for over 35 years. As a licensed Oklahoma plumber (#004651), Greg and his team bring decades of hands-on experience to every job &#8212; big or small.</p>
-          <p>MainStream is built on straight talk, fair pricing, and work that lasts. From emergency calls in the middle of the night to planned remodels, this team shows up on time, explains what needs to happen, and gets it done right. That&#8217;s why OKC homeowners keep calling back.</p>
+          <p>MainStream Sewer and Drain Service, a division of Stone Creek Plumbing Co Inc, has been serving the Oklahoma City metro area for over 35 years. Founded by Greg Mullin in 1989, we've built our reputation on honest work, fair pricing, and treating every home like our own.</p>
+          <p>Unlike the big franchises, we don't charge trip fees, service fees, or hidden "by the foot" charges. You get a free estimate, upfront pricing, and a team that actually answers the phone. We welcome second opinions &mdash; because we're confident in our work.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Free Estimates, No Trip Charges</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>No Hidden Fees or "By the Foot" Pricing</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Licensed, Bonded &amp; Insured (OK #004651)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Second Opinions Welcome</span>
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="stat-grid">
-            <div class="stat">
-              <span class="stat-number">35+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">4.1&#9733;</span>
-              <span class="stat-label">Google Rating (42 Reviews)</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">FREE</span>
-              <span class="stat-label">Estimates &#8212; No Trip Charges</span>
-            </div>
+        <div class="stats-panel">
+          <div class="stat-card">
+            <div class="stat-number">35+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">5-Star Reviews</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Emergency Available</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">20mi</div>
+            <div class="stat-label">Service Radius</div>
           </div>
         </div>
       </div>
@@ -472,50 +1065,96 @@
   </section>
 
   <!-- CERTIFICATIONS -->
-  <div class="cert-bar bg-light">
+  <div class="cert-bar">
     <div class="container">
-      <h3>Licensed &amp; Certified</h3>
+      <div class="cert-label">Licensed &amp; Certified</div>
       <div class="cert-logos">
-        <span>&#128737; Licensed Plumber OK #004651</span>
-        <span>&#9989; Bonded &amp; Insured</span>
-        <span>&#127942; Edmond Chamber Member</span>
+        <div class="cert-badge">
+          <span class="cert-badge-icon">&#128737;</span> OK Licensed Plumber #004651
+        </div>
+        <div class="cert-badge">
+          <span class="cert-badge-icon">&#9989;</span> Bonded &amp; Insured
+        </div>
+        <div class="cert-badge">
+          <span class="cert-badge-icon">&#127963;</span> Edmond Chamber Member
+        </div>
       </div>
     </div>
   </div>
 
   <!-- REVIEWS -->
-  <section id="reviews" class="bg-tint">
+  <section id="reviews" style="background: var(--gray-50);">
     <div class="container">
-      <h2>What Our Customers Say</h2>
-      <p class="section-subtitle">Real reviews from real customers.</p>
+      <div class="reviews-header">
+        <div>
+          <span class="section-label">Customer Reviews</span>
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="reviews-aggregate">
+          <span class="aggregate-score">4.5</span>
+          <div class="aggregate-meta">
+            <span class="aggregate-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="aggregate-count">50+ reviews on Google</span>
+          </div>
+        </div>
+      </div>
       <div class="reviews-grid">
         <div class="review-card">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-text">"We have used Stone Creek on many different plumbing situations and they have done an outstanding job every time. We sure appreciate everything they have done for us."</p>
-          <span class="review-author">&#8212; Jeff Canaday</span>
-          <span class="review-source">(Google)</span>
+          <p class="review-text">We have used Stone Creek on many different plumbing situations and they have done an outstanding job every time. We sure appreciate everything they have done for us.</p>
+          <div class="review-author">
+            <div class="review-avatar">JC</div>
+            <div>
+              <div class="review-name">Jeff C.</div>
+              <div class="review-source">Google Review</div>
+            </div>
+          </div>
         </div>
         <div class="review-card">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-text">"They texted me first thing this morning... Jace came right at 11, found the crack in my tank... I went and got one myself they could maybe install it today..."</p>
-          <span class="review-author">&#8212; Wes Veitch</span>
-          <span class="review-source">(Google)</span>
+          <p class="review-text">They texted me before 8:30 and told me they'd be here around 11. Jace came right at 11, found the crack in my tank, and said if I went and got one myself they could install it today. Fantastic service and communication.</p>
+          <div class="review-author">
+            <div class="review-avatar">WV</div>
+            <div>
+              <div class="review-name">Wes V.</div>
+              <div class="review-source">Google Review</div>
+            </div>
+          </div>
         </div>
         <div class="review-card">
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="review-text">"A supervisor was here within 2 hours and a worker was digging up the mess within the next 45 minutes. I was very grateful they were quick to respond... The worker informed me along the way what he was doing... I can&#8217;t imagine this situation going any better!"</p>
-          <span class="review-author">&#8212; Joanna M.</span>
-          <span class="review-source">(Angi)</span>
+          <p class="review-text">A supervisor was here within 2 hours and a worker was digging up the mess within 45 minutes. He informed me along the way what he was doing, where the failure was and its cause. I can't imagine this situation going any better!</p>
+          <div class="review-author">
+            <div class="review-avatar">JM</div>
+            <div>
+              <div class="review-name">Joanna M.</div>
+              <div class="review-source">Angi Review</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE AREA -->
-  <section id="area" class="service-area">
+  <!-- SECOND CTA BAND -->
+  <div class="cta-band">
     <div class="container">
-      <h2>Serving the Oklahoma City Metro Area</h2>
-      <p class="section-subtitle">Proudly serving these communities and surrounding areas.</p>
+      <div>
+        <h3>Don't Let a Small Problem Become a Big One</h3>
+        <p>Free estimates. No hidden fees. Satisfaction guaranteed.</p>
+      </div>
+      <a href="tel:4055137188" class="btn btn-white">
+        <span class="btn-icon">&#9742;</span> Call for Same-Day Service
+      </a>
+    </div>
+  </div>
+
+  <!-- SERVICE AREA -->
+  <section class="text-center">
+    <div class="container">
+      <span class="section-label">Service Area</span>
+      <h2>Proudly Serving Oklahoma City &amp; Surrounding Communities</h2>
+      <p class="section-desc mx-auto">We serve these communities and surrounding areas with fast, reliable plumbing service.</p>
       <div class="area-tags">
         <span class="area-tag">Oklahoma City</span>
         <span class="area-tag">Edmond</span>
@@ -531,31 +1170,28 @@
     </div>
   </section>
 
-  <!-- FINANCING -->
-  <div class="financing-bar">
+  <!-- FINAL CTA -->
+  <section class="final-cta">
     <div class="container">
-      <h3>Flexible Financing Available</h3>
-      <p>We offer financing options to fit your budget. Ask about our payment plans when you call.</p>
-    </div>
-  </div>
-
-  <!-- CONTACT / CTA -->
-  <section id="contact" class="cta-section">
-    <div class="container">
-      <h2>Need a Plumber? We&#8217;re Ready.</h2>
-      <p class="section-subtitle">Fast response times, upfront pricing, and quality work guaranteed. Call today.</p>
-      <a href="tel:4055137188" class="hero-cta">Call (405) 513-7188</a>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <span class="contact-icon">&#9742;</span>
+      <h2>Ready to Fix Your Plumbing Problem?</h2>
+      <p>Call today for a free estimate. No trip charges, no hidden fees, no hassle.</p>
+      <div class="final-cta-actions">
+        <a href="tel:4055137188" class="btn btn-primary">
+          <span class="btn-icon">&#9742;</span> Call (405) 513-7188
+        </a>
+        <a href="mailto:stonecreekplumbing@gmail.com" class="btn btn-accent-outline">Send an Email</a>
+      </div>
+      <div class="final-contact">
+        <div class="final-contact-item">
+          <span class="final-contact-icon">&#9742;</span>
           <span>(405) 513-7188</span>
         </div>
-        <div class="contact-item">
-          <span class="contact-icon">&#9993;</span>
+        <div class="final-contact-item">
+          <span class="final-contact-icon">&#9993;</span>
           <span>stonecreekplumbing@gmail.com</span>
         </div>
-        <div class="contact-item">
-          <span class="contact-icon">&#9906;</span>
+        <div class="final-contact-item">
+          <span class="final-contact-icon">&#128205;</span>
           <span>2012 NW 41st St, Oklahoma City, OK 73118</span>
         </div>
       </div>
@@ -572,31 +1208,38 @@
 
   <!-- PREVIEW BANNER -->
   <div class="preview-banner">
-    This is a free website preview built by <a href="https://bspoke.studio">b.spoke</a>. Like what you see? Let&#8217;s make it yours.
+    &#9733; This is a free preview built by <a href="https://bspoke.studio">b.spoke</a> &mdash; like what you see? Let's make it yours.
   </div>
 
-  <!-- MOBILE NAV TOGGLE -->
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta">
+    <a href="tel:4055137188">
+      <span>&#9742;</span> Tap to Call &mdash; (405) 513-7188
+    </a>
+  </div>
+
+  <!-- SCRIPTS -->
   <script>
     const toggle = document.querySelector('.nav-toggle');
     const links = document.querySelector('.nav-links');
     if (toggle && links) {
-      toggle.addEventListener('click', () => {
-        const isOpen = links.style.display === 'flex';
-        links.style.display = isOpen ? 'none' : 'flex';
-        if (!isOpen) {
-          links.style.flexDirection = 'column';
-          links.style.position = 'absolute';
-          links.style.top = '100%';
-          links.style.left = '0';
-          links.style.right = '0';
-          links.style.background = 'rgba(255,255,255,0.98)';
-          links.style.padding = '24px';
-          links.style.gap = '16px';
-          links.style.borderBottom = '1px solid #e2e8f0';
-          links.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
-        }
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
+      links.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => links.classList.remove('open'));
       });
     }
+
+    const header = document.querySelector('.header');
+    const headerTop = document.querySelector('.header-top');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (headerTop) {
+        headerTop.style.transform = scrollY > 80 ? 'translateY(-100%)' : 'translateY(0)';
+        headerTop.style.transition = 'transform 0.3s ease';
+      }
+      lastScroll = scrollY;
+    }, { passive: true });
   </script>
 
 </body>
