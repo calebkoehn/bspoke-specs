@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{BUSINESS_NAME}} | Website Preview by b.spoke</title>
+  <meta name="description" content="A custom website preview built for {{BUSINESS_NAME}} by b.spoke digital agency.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      /* b.spoke brand palette */
+      --bg-primary: #1a1a2e;
+      --bg-surface: #16213e;
+      --bg-elevated: #1e2a4a;
+      --accent: #4361ee;
+      --accent-hover: #3651d4;
+      --accent-light: rgba(67, 97, 238, 0.15);
+      --text-primary: #ffffff;
+      --text-secondary: #a0aec0;
+      --text-muted: #718096;
+      --border: #2d3748;
+      --success: #48bb78;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --shadow-card: 0 4px 24px rgba(0,0,0,0.3);
+      --shadow-hover: 0 12px 40px rgba(67,97,238,0.2);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      /* Prospect-specific overrides (web dev agent fills these) */
+      --prospect-accent: {{ACCENT_COLOR|#4361ee}};
+      --prospect-accent-hover: {{ACCENT_HOVER|#3651d4}};
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+    h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    p { color: var(--text-secondary); max-width: 640px; }
+
+    /* ===== LAYOUT ===== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 80px 0; }
+    section:nth-child(even) { background: var(--bg-surface); }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(26, 26, 46, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .nav-brand {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      background: var(--prospect-accent);
+      color: #fff !important;
+      padding: 10px 24px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+    }
+    .nav-cta:hover { background: var(--prospect-accent-hover); transform: translateY(-1px); }
+
+    /* Mobile nav */
+    .nav-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 160px 0 100px;
+      text-align: center;
+      background: var(--bg-primary);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(67,97,238,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero h1 { margin-bottom: 1.25rem; position: relative; }
+    .hero p { font-size: 1.15rem; margin: 0 auto 2rem; max-width: 560px; position: relative; }
+    .hero-cta {
+      display: inline-block;
+      background: var(--prospect-accent);
+      color: #fff;
+      padding: 16px 40px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: var(--transition);
+      position: relative;
+      box-shadow: 0 4px 20px rgba(67,97,238,0.3);
+    }
+    .hero-cta:hover { background: var(--prospect-accent-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(67,97,238,0.4); }
+
+    /* ===== SERVICES GRID ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 2.5rem;
+    }
+    .service-card {
+      background: linear-gradient(135deg, var(--bg-surface), var(--bg-elevated));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      transition: var(--transition);
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--prospect-accent);
+      box-shadow: var(--shadow-hover);
+    }
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .service-card h3 { color: var(--text-primary); }
+    .service-card p { font-size: 0.95rem; color: var(--text-secondary); }
+
+    /* ===== ABOUT / WHY CHOOSE ===== */
+    .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .about-text p { margin-bottom: 1rem; }
+    .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 2rem; }
+    .stat { text-align: center; }
+    .stat-number {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--prospect-accent);
+      display: block;
+    }
+    .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+
+    /* ===== REVIEWS ===== */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 2.5rem;
+    }
+    .review-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px;
+    }
+    .review-stars { color: #f6ad55; font-size: 1rem; margin-bottom: 12px; }
+    .review-text { font-size: 0.95rem; font-style: italic; color: var(--text-secondary); margin-bottom: 16px; }
+    .review-author { font-weight: 600; font-size: 0.85rem; color: var(--text-primary); }
+
+    /* ===== CONTACT / CTA ===== */
+    .cta-section { text-align: center; }
+    .cta-section h2 { margin-bottom: 0.75rem; }
+    .cta-section p { margin: 0 auto 2rem; }
+    .contact-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .contact-icon { font-size: 1.25rem; color: var(--prospect-accent); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111127;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    .footer-bspoke {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-top: 12px;
+    }
+    .footer-bspoke a { color: var(--accent); text-decoration: none; }
+    .footer-bspoke a:hover { text-decoration: underline; }
+
+    /* ===== PREVIEW BANNER ===== */
+    .preview-banner {
+      background: linear-gradient(135deg, var(--accent), #6366f1);
+      color: #fff;
+      text-align: center;
+      padding: 12px 24px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+    }
+    .preview-banner a { color: #fff; text-decoration: underline; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      section { padding: 60px 0; }
+      .hero { padding: 120px 0 80px; }
+      .about-content { grid-template-columns: 1fr; gap: 32px; }
+      .stat-grid { grid-template-columns: repeat(3, 1fr); }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .contact-grid { flex-direction: column; align-items: center; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .hero-cta { padding: 14px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-brand">{{BUSINESS_NAME}}</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>{{HERO_HEADLINE}}</h1>
+      <p>{{HERO_SUBHEADLINE}}</p>
+      <a href="#contact" class="hero-cta">{{CTA_TEXT|Get a Free Quote}}</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>{{SERVICES_INTRO}}</p>
+      <div class="services-grid">
+        {{SERVICE_CARDS}}
+        <!-- Each card follows this pattern:
+        <div class="service-card">
+          <span class="service-icon">ICON_EMOJI</span>
+          <h3>Service Name</h3>
+          <p>Short description of this service.</p>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / WHY CHOOSE -->
+  <section id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Why Choose {{BUSINESS_NAME}}</h2>
+          <p>{{ABOUT_PARAGRAPH_1}}</p>
+          <p>{{ABOUT_PARAGRAPH_2}}</p>
+        </div>
+        <div>
+          <div class="stat-grid">
+            {{STATS}}
+            <!-- Each stat follows this pattern:
+            <div class="stat">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="container">
+      <h2>What Customers Say</h2>
+      <p>Real reviews from real customers.</p>
+      <div class="reviews-grid">
+        {{REVIEW_CARDS}}
+        <!-- Each review follows this pattern:
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Review text here."</p>
+          <span class="review-author">- Reviewer Name</span>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="contact" class="cta-section">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <p>{{CONTACT_INTRO|Reach out today for a free estimate. We'd love to help.}}</p>
+      <a href="tel:{{PHONE_RAW}}" class="hero-cta">Call {{PHONE_DISPLAY}}</a>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="contact-icon">&#9742;</span>
+          <span>{{PHONE_DISPLAY}}</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#9993;</span>
+          <span>{{EMAIL|info@example.com}}</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#9906;</span>
+          <span>{{ADDRESS}}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; {{YEAR}} {{BUSINESS_NAME}}. All rights reserved.</p>
+      <p class="footer-bspoke">Website preview built by <a href="https://bspoke.studio" target="_blank">b.spoke</a></p>
+    </div>
+  </footer>
+
+  <!-- PREVIEW BANNER -->
+  <div class="preview-banner">
+    This is a free website preview built by <a href="https://bspoke.studio">b.spoke</a>. Like what you see? Let's make it yours.
+  </div>
+
+  <!-- MOBILE NAV TOGGLE -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => {
+        links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+        links.style.flexDirection = 'column';
+        links.style.position = 'absolute';
+        links.style.top = '100%';
+        links.style.left = '0';
+        links.style.right = '0';
+        links.style.background = 'rgba(26,26,46,0.95)';
+        links.style.padding = '24px';
+        links.style.gap = '16px';
+        links.style.borderBottom = '1px solid #2d3748';
+      });
+    }
+  </script>
+
+</body>
+</html>
