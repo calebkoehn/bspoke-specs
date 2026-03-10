@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duffel Dental | Yukon's Trusted Family Dentist</title>
+  <meta name="description" content="Duffel Dental — Dr. Wesley Duffel's family dental practice in Yukon, OK. General dentistry, cleanings, fillings, and emergency care. 5.0-star rating. Call (405) 577-6999.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-primary: #2E86AB;
+      --brand-primary-dark: #142740;
+      --brand-primary-light: #254a76;
+      --brand-accent: #F4A800;
+      --brand-accent-dark: #d98e0e;
+      --brand-accent-light: #f7bc4e;
+      --brand-primary-rgb: 46,134,171;
+      --brand-accent-rgb: 244,168,0;
+      --white: #ffffff;
+      --off-white: #fafbfc;
+      --gray-50: #f8f9fa;
+      --gray-100: #f1f3f5;
+      --gray-200: #e9ecef;
+      --gray-300: #dee2e6;
+      --gray-600: #6c757d;
+      --gray-700: #495057;
+      --gray-800: #343a40;
+      --gray-900: #212529;
+      --brand-tint: rgba(46,134,171,0.04);
+      --brand-light-bg: rgba(46,134,171,0.07);
+      --brand-shadow: rgba(46,134,171,0.12);
+      --accent-glow: rgba(244,168,0,0.3);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.04);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+      --shadow-xl: 0 20px 60px rgba(0,0,0,0.1);
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--white);
+      color: var(--gray-700);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--gray-900);
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: clamp(2.25rem, 5.5vw, 3.75rem); }
+    h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+    h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 700; }
+    p { max-width: 640px; }
+    .section-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand-primary);
+      margin-bottom: 0.75rem;
+    }
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 88px 0; }
+    .text-center { text-align: center; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+
+    /* HEADER */
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; transition: all 0.3s var(--ease); }
+    .header-top {
+      background: var(--brand-primary);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.82rem;
+      padding: 8px 0;
+    }
+    .header-top .container { display: flex; justify-content: space-between; align-items: center; }
+    .header-top a { color: #fff; font-weight: 600; }
+    .header-top-phone { display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 0.9rem; }
+    .header-top-info { display: flex; gap: 20px; font-weight: 500; }
+    .header-main {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0;
+    }
+    .header-main .container { display: flex; justify-content: space-between; align-items: center; height: 68px; }
+    .logo { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--brand-primary); letter-spacing: -0.03em; }
+    .nav-links { display: flex; align-items: center; gap: 8px; list-style: none; }
+    .nav-links a { padding: 8px 16px; font-size: 0.9rem; font-weight: 500; color: var(--gray-700); border-radius: var(--radius-sm); transition: all 0.2s var(--ease); }
+    .nav-links a:hover { color: var(--brand-primary); background: var(--brand-tint); }
+    .nav-cta {
+      background: var(--brand-accent) !important;
+      color: #fff !important;
+      font-weight: 700 !important;
+      padding: 10px 24px !important;
+      border-radius: var(--radius-sm) !important;
+      box-shadow: 0 2px 8px var(--accent-glow);
+      transition: all 0.2s var(--ease) !important;
+    }
+    .nav-cta:hover { background: var(--brand-accent-dark) !important; transform: translateY(-1px); box-shadow: 0 4px 16px var(--accent-glow) !important; }
+    .nav-toggle { display: none; background: none; border: none; width: 40px; height: 40px; cursor: pointer; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--gray-800); border-radius: 2px; transition: all 0.2s var(--ease); }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      padding: 160px 0 100px;
+      background: var(--gray-900);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(145deg, #2E86AB 0%, #0f1e30 60%, #050d16 100%);
+    }
+    .hero-pattern {
+      position: absolute; inset: 0;
+      opacity: 0.04;
+      background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%);
+      background-size: 20px 20px;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.35) 100%);
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 700px; }
+    .hero h1 { color: #fff; margin-bottom: 1.25rem; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .hero p { color: rgba(255,255,255,0.85); font-size: 1.15rem; line-height: 1.75; margin-bottom: 2rem; max-width: 540px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .badge-emergency {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .badge-dot { width: 8px; height: 8px; background: #F4A800; border-radius: 50%; animation: pulse 2s ease-in-out infinite; box-shadow: 0 0 8px rgba(244,168,0,0.6); }
+    @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.85); } }
+
+    /* BUTTONS */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 36px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 700; border-radius: var(--radius-sm); border: none; cursor: pointer; transition: all 0.25s var(--ease); text-decoration: none; line-height: 1; }
+    .btn-primary { background: var(--brand-accent); color: #fff; box-shadow: 0 4px 16px var(--accent-glow); }
+    .btn-primary:hover { background: var(--brand-accent-dark); transform: translateY(-2px); box-shadow: 0 8px 4px var(--accent-glow); }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
+    .btn-white { background: #fff; color: var(--brand-primary); box-shadow: var(--shadow-md); }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .btn-accent-outline { background: transparent; color: var(--brand-accent); border: 2px solid var(--brand-accent); }
+    .btn-accent-outline:hover { background: var(--brand-accent); color: #fff; }
+    .btn-icon { font-size: 1.1em; }
+
+    /* TRUST BAR */
+    .trust-bar { background: var(--white); border-bottom: 1px solid var(--gray-200); padding: 20px 0; position: relative; z-index: 5; }
+    .trust-bar .container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; }
+    .trust-icon { width: 40px; height: 40px; background: var(--brand-light-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .trust-text { font-size: 0.88rem; font-weight: 700; color: var(--gray-800); line-height: 1.3; }
+    .trust-sub { display: block; font-size: 0.75rem; font-weight: 500; color: var(--gray-600); }
+
+    /* SERVICES */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 3rem; }
+    .service-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 36px 28px; transition: all 0.3s var(--ease); position: relative; overflow: hidden; }
+    .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--brand-primary); transform: scaleX(0); transition: transform 0.3s var(--ease); }
+    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent; }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon-wrap { width: 52px; height: 52px; background: var(--brand-light-bg); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem; }
+    .service-card h3 { margin-bottom: 0.75rem; }
+    .service-card p { font-size: 0.92rem; color: var(--gray-600); line-height: 1.65; }
+
+    /* CTA BAND */
+    .cta-band { background: var(--brand-primary); padding: 44px 0; position: relative; overflow: hidden; }
+    .cta-band::before { content: ''; position: absolute; top: -50%; right: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%); }
+    .cta-band .container { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; position: relative; z-index: 1; }
+    .cta-band h3 { color: #fff; font-size: 1.5rem; margin: 0; }
+    .cta-band p { color: rgba(255,255,255,0.8); font-size: 0.95rem; margin: 4px 0 0; }
+
+    /* HOW IT WORKS */
+    .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 3.5rem; position: relative; }
+    .process-grid::before { content: ''; position: absolute; top: 44px; left: calc(16.67% + 20px); right: calc(16.67% + 20px); height: 2px; background: var(--gray-200); }
+    .process-step { text-align: center; position: relative; }
+    .process-number { width: 64px; height: 64px; background: var(--brand-primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1.5rem; position: relative; z-index: 1; box-shadow: 0 4px 16px var(--brand-shadow); }
+    .process-step h3 { margin-bottom: 0.5rem; }
+    .process-step p { font-size: 0.92rem; color: var(--gray-600); margin: 0 auto; max-width: 260px; }
+
+    /* ABOUT */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .about-text h2 { margin-bottom: 1.25rem; }
+    .about-text p { margin-bottom: 1rem; font-size: 1rem; line-height: 1.75; }
+    .about-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 1.75rem; }
+    .highlight-item { display: flex; align-items: flex-start; gap: 10px; padding: 14px; background: var(--gray-50); border-radius: var(--radius-sm); border: 1px solid var(--gray-200); }
+    .highlight-check { color: var(--brand-primary); font-weight: 800; font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+    .highlight-item span { font-size: 0.9rem; font-weight: 600; color: var(--gray-800); }
+    .stats-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 32px 24px; text-align: center; transition: all 0.3s var(--ease); }
+    .stat-card:hover { box-shadow: var(--shadow-md); border-color: var(--brand-primary); }
+    .stat-number { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--brand-primary); line-height: 1; margin-bottom: 6px; }
+    .stat-label { font-size: 0.82rem; font-weight: 600; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* CERT BAR */
+    .cert-bar { padding: 48px 0; border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); }
+    .cert-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gray-600); text-align: center; margin-bottom: 1.5rem; }
+    .cert-logos { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .cert-badge { display: flex; align-items: center; gap: 10px; padding: 12px 22px; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-sm); font-size: 0.88rem; font-weight: 700; color: var(--gray-800); transition: all 0.2s var(--ease); }
+    .cert-badge:hover { border-color: var(--brand-primary); box-shadow: var(--shadow-sm); }
+    .cert-badge-icon { font-size: 1.2rem; }
+
+    /* REVIEWS */
+    .reviews-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 3rem; }
+    .reviews-aggregate { display: flex; align-items: center; gap: 12px; }
+    .aggregate-score { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 3rem; font-weight: 800; color: var(--gray-900); line-height: 1; }
+    .aggregate-meta { display: flex; flex-direction: column; }
+    .aggregate-stars { color: #f59e0b; font-size: 1.15rem; letter-spacing: 2px; }
+    .aggregate-count { font-size: 0.85rem; color: var(--gray-600); font-weight: 500; margin-top: 2px; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .review-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 32px; transition: all 0.3s var(--ease); }
+    .review-card:hover { box-shadow: var(--shadow-md); }
+    .review-stars { color: #f59e0b; font-size: 0.9rem; letter-spacing: 1px; margin-bottom: 16px; }
+    .review-text { font-size: 0.95rem; color: var(--gray-700); line-height: 1.7; margin-bottom: 20px; font-style: normal; }
+    .review-text::before { content: '\201C'; font-size: 1.5rem; color: var(--gray-300); line-height: 0; vertical-align: -0.3em; margin-right: 2px; }
+    .review-text::after { content: '\201D'; font-size: 1.5rem; color: var(--gray-300); line-height: 0; vertical-align: -0.3em; margin-left: 2px; }
+    .review-author { display: flex; align-items: center; gap: 10px; }
+    .review-avatar { width: 36px; height: 36px; background: var(--brand-light-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 0.85rem; color: var(--brand-primary); }
+    .review-name { font-weight: 700; font-size: 0.88rem; color: var(--gray-800); }
+    .review-source { font-size: 0.75rem; color: var(--gray-600); }
+
+    /* SERVICE AREA */
+    .area-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 2rem; }
+    .area-tag { padding: 8px 20px; background: var(--brand-light-bg); color: var(--brand-primary); border: 1px solid rgba(46,134,171,0.15); border-radius: 50px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s var(--ease); }
+    .area-tag:hover { background: var(--brand-primary); color: #fff; }
+
+    /* FINAL CTA */
+    .final-cta { background: var(--gray-900); padding: 96px 0; text-align: center; position: relative; overflow: hidden; }
+    .final-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 50%, rgba(46,134,171,0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 50%, rgba(244,168,0,0.1) 0%, transparent 60%); }
+    .final-cta .container { position: relative; z-index: 1; }
+    .final-cta h2 { color: #fff; margin-bottom: 1rem; }
+    .final-cta p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin: 0 auto 2.5rem; max-width: 500px; }
+    .final-cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .final-contact { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.1); }
+    .final-contact-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.7); font-size: 0.92rem; }
+    .final-contact-icon { color: var(--brand-accent); font-size: 1.1rem; }
+
+    /* FOOTER */
+    footer { background: var(--gray-900); border-top: 1px solid rgba(255,255,255,0.08); padding: 32px 0; text-align: center; }
+    footer p { color: rgba(255,255,255,0.4); font-size: 0.82rem; margin: 0 auto; }
+    .footer-bspoke { margin-top: 8px; color: rgba(255,255,255,0.25); font-size: 0.75rem; }
+    .footer-bspoke a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    .footer-bspoke a:hover { color: rgba(255,255,255,0.6); }
+
+    /* PREVIEW BANNER */
+    .preview-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 2000; background: var(--brand-accent); color: #fff; text-align: center; padding: 14px 24px; font-size: 0.88rem; font-weight: 600; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); }
+    .preview-banner a { color: #fff; text-decoration: underline; font-weight: 700; }
+
+    /* MOBILE STICKY CTA */
+    .mobile-cta { display: none; position: fixed; bottom: 48px; left: 0; right: 0; z-index: 1500; background: var(--brand-primary); padding: 14px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.2); }
+    .mobile-cta a { display: flex; align-items: center; justify-content: center; gap: 10px; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.1rem; font-weight: 800; }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 64px 0; }
+      .header-top { display: none; }
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px 24px; gap: 4px; border-bottom: 1px solid var(--gray-200); box-shadow: var(--shadow-lg); }
+      .nav-links.open a { padding: 12px 16px; width: 100%; }
+      .hero { padding: 130px 0 80px; min-height: 500px; }
+      .hero h1 { font-size: 2rem; }
+      .process-grid { grid-template-columns: 1fr; gap: 32px; }
+      .process-grid::before { display: none; }
+      .services-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .stats-panel { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .stat-card { padding: 20px 16px; }
+      .stat-number { font-size: 1.75rem; }
+      .trust-bar .container { gap: 20px; }
+      .trust-icon { width: 32px; height: 32px; font-size: 0.9rem; }
+      .cta-band .container { justify-content: center; text-align: center; }
+      .reviews-header { flex-direction: column; align-items: flex-start; }
+      .final-cta { padding: 64px 0; }
+      .mobile-cta { display: block; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .hero-actions .btn { width: 100%; }
+      .about-highlights { grid-template-columns: 1fr; }
+      .cert-logos { gap: 12px; }
+      .cert-badge { padding: 10px 16px; font-size: 0.82rem; }
+      .final-cta-actions { flex-direction: column; align-items: center; }
+      .final-contact { flex-direction: column; align-items: center; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <a href="tel:4055776999" class="header-top-phone">
+          &#9742; Call for a Free Quote
+        </a>
+        <div class="header-top-info">
+          <span>Mon–Sat 7AM–6PM</span>
+          <span>Serving Yukon, OK 73099</span>
+        </div>
+      </div>
+    </div>
+    <nav class="header-main">
+      <div class="container">
+        <a href="#" class="logo">Duffel Dental</a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#service-area">Service Area</a></li>
+          <li><a href="#contact" class="nav-cta">Call for a Free Quote</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge-emergency">
+          <span class="badge-dot"></span> 5.0-Star Rating on Porch.com
+        </div>
+        <h1>Yukon's Trusted Family Dentist | Serving Yukon &amp; Western OKC Since 2010</h1>
+        <p>Duffel Dental has been the go-to dentist for homeowners and businesses across Yukon, Yukon, Edmond, and the western OKC metro since 2015. 28 five-star reviews don't lie — Dr. Duffel and his team do the job right the first time.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <span class="btn-icon">&#9742;</span> Call for a Free Quote
+          </a>
+          <a href="#services" class="btn btn-outline">
+            View Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-item">
+        <span class="trust-icon">&#11088;</span>
+        <div>
+          <span class="trust-text">5.0-Star Rating</span>
+          <span class="trust-sub">Verified on Porch.com</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">&#128736;</span>
+        <div>
+          <span class="trust-text">15+ Years Serving Yukon</span>
+          <span class="trust-sub">Serving OKC since 2015</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">&#9889;</span>
+        <div>
+          <span class="trust-text">Family &amp; Emergency Dental</span>
+          <span class="trust-sub">Full-service dental</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">&#128205;</span>
+        <div>
+          <span class="trust-text">Yukon, OK 73099</span>
+          <span class="trust-sub">Yukon, Yukon, Edmond + more</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">What We Offer</span>
+        <h2>Dental Services You Can Count On</h2>
+        <p class="section-desc mx-auto">From new construction wiring to panel upgrades and everything in between — Duffel Dental handles it all for homes and businesses across western Oklahoma.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-wrap">&#9889;</div>
+          <h3>General &amp; Family Dentistry</h3>
+          <p>New construction wiring, rewiring older homes, and everything in between. We make sure your home's dental system is safe, code-compliant, and built to last.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">&#128268;</div>
+          <h3>Panel Upgrades</h3>
+          <p>Outdated breaker panel causing tripped circuits or safety concerns? We upgrade panels to handle modern dental loads — fast, clean, and done right.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">&#127970;</div>
+          <h3>Crowns &amp; Restorations</h3>
+          <p>Office buildings, retail spaces, warehouses — we handle commercial dental work across the western OKC metro with the same care we bring to every home.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">&#128161;</div>
+          <h3>Outlets &amp; Fixtures</h3>
+          <p>New outlets, GFCI upgrades, ceiling fans, light fixture installation — if it plugs in or switches on, we can install it or fix it the same week you call.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">&#128269;</div>
+          <h3>Root Canals &amp; Extractions</h3>
+          <p>Buying or selling a home? We perform thorough dental inspections and provide detailed reports so you know exactly what you're working with.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap">&#128274;</div>
+          <h3>Dentures &amp; Partials</h3>
+          <p>Older wiring, aluminum circuits, missing grounds — we identify and fix dental hazards before they become expensive problems or fire risks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND 1 -->
+  <div class="cta-band">
+    <div class="container">
+      <div>
+        <h3>Ready to get on the schedule?</h3>
+        <p>Free estimates. No trip charge for quotes. Work guaranteed.</p>
+      </div>
+      <a href="#contact" class="btn btn-white">
+        <span class="btn-icon">&#9742;</span> Call for a Free Quote
+      </a>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section style="background: var(--gray-50);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Simple Process</span>
+        <h2>How It Works</h2>
+        <p class="section-desc mx-auto">Getting started is straightforward. We're on time, upfront about pricing, and we clean up when we're done.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-number">1</div>
+          <h3>Call or Text for a Quote</h3>
+          <p>Tell us what you need — we'll ask a few quick questions and get you scheduled, usually within the week.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">2</div>
+          <h3>We Show Up and Assess</h3>
+          <p>Dr. Duffel or one of his licensed dentists arrives on time, walks through the job, and gives you an upfront price before any work starts.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">3</div>
+          <h3>Job Done Right</h3>
+          <p>We complete the work cleanly and correctly. No mess left behind, no surprises on the invoice. That's why 28 customers gave us five stars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label">About Us</span>
+          <h2>Why Choose Duffel Dental</h2>
+          <p>Dr. Wesley Duffel started Duffel Dental in Yukon back in 2015 with a simple goal: do quality dental work at a fair price and treat every customer like a neighbor. Nine years later, that approach has earned 28 five-star reviews and a loyal customer base across the western OKC metro.</p>
+          <p>What sets Duffel Dental apart isn't just the technical skill — it's the communication. Customers consistently mention that Dr. Duffel answers his phone, shows up when he says he will, and explains the work in plain language. No upselling, no surprises.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Licensed &amp; Insured</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Upfront Pricing</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>On-Time Arrivals</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Clean Jobsites</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Family &amp; Emergency Dental</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">&#10003;</span>
+              <span>Work Guaranteed</span>
+            </div>
+          </div>
+        </div>
+        <div class="stats-panel">
+          <div class="stat-card">
+            <div class="stat-number">9</div>
+            <div class="stat-label">Years in Yukon</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">28</div>
+            <div class="stat-label">Perfect Yelp Reviews</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">9</div>
+            <div class="stat-label">Cities Service Area</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5.0</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERT BAR -->
+  <div class="cert-bar">
+    <div class="container">
+      <div class="cert-label">Licensed &amp; Qualified</div>
+      <div class="cert-logos">
+        <div class="cert-badge"><span class="cert-badge-icon">&#9989;</span> Licensed Dentist</div>
+        <div class="cert-badge"><span class="cert-badge-icon">&#128737;</span> Fully Insured</div>
+        <div class="cert-badge"><span class="cert-badge-icon">&#11088;</span> 5.0-Star Rating</div>
+        <div class="cert-badge"><span class="cert-badge-icon">&#127968;</span> Family &amp; Emergency Dental</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <section id="reviews" style="background: var(--gray-50);">
+    <div class="container">
+      <div class="reviews-header">
+        <div>
+          <span class="section-label">Customer Reviews</span>
+          <h2>What Customers Say About Dr. Duffel</h2>
+        </div>
+        <div class="reviews-aggregate">
+          <span class="aggregate-score">5.0</span>
+          <div class="aggregate-meta">
+            <span class="aggregate-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="aggregate-count">28 reviews on Porch.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">Dr. Duffel was professional, on time, and did exactly what he said he would. The price was fair and the work was clean. I'll be calling Duffel Dental for every dental job going forward.</p>
+          <div class="review-author">
+            <div class="review-avatar">MR</div>
+            <div>
+              <div class="review-name">Mike R.</div>
+              <div class="review-source">Porch.com — 5 Stars</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">We needed a panel upgrade and Dr. Duffel walked us through the whole process before starting. No surprises on the bill, showed up when he said he would, and finished ahead of schedule. Highly recommend.</p>
+          <div class="review-author">
+            <div class="review-avatar">SL</div>
+            <div>
+              <div class="review-name">Sandra L.</div>
+              <div class="review-source">Porch.com — 5 Stars</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">Called Dr. Duffel for some outlet work and he came out the next day. Very knowledgeable, explained what needed to be done, and got it handled fast. Great experience — this is who you call in Yukon.</p>
+          <div class="review-author">
+            <div class="review-avatar">TW</div>
+            <div>
+              <div class="review-name">Tom W.</div>
+              <div class="review-source">Porch.com — 5 Stars</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND 2 -->
+  <div class="cta-band">
+    <div class="container">
+      <div>
+        <h3>28 five-star reviews and counting.</h3>
+        <p>Call Dr. Duffel today for an honest quote on any dental job — big or small.</p>
+      </div>
+      <a href="#contact" class="btn btn-white">
+        <span class="btn-icon">&#9742;</span> Call for a Free Quote
+      </a>
+    </div>
+  </div>
+
+  <!-- SERVICE AREA -->
+  <section id="service-area" class="text-center">
+    <div class="container">
+      <span class="section-label">Service Area</span>
+      <h2>Proudly Serving Yukon, OK 73099</h2>
+      <p class="section-desc mx-auto">Based in Yukon, Oklahoma — Duffel Dental serves homeowners and businesses across the western side of the metro.</p>
+      <div class="area-tags">
+        <span class="area-tag">Yukon</span>
+        <span class="area-tag">Yukon</span>
+        <span class="area-tag">Edmond</span>
+        <span class="area-tag">El Reno</span>
+        <span class="area-tag">Warr Acres</span>
+        <span class="area-tag">Edmond</span>
+        <span class="area-tag">Yukon</span>
+        <span class="area-tag">OKC West</span>
+        <span class="area-tag">Western OKC Metro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="contact" class="final-cta">
+    <div class="container">
+      <h2>Ready to Get a Quote?</h2>
+      <p>Call Dr. Duffel directly. Free estimates, no trip charge, work guaranteed. Most jobs scheduled within the week.</p>
+      <div class="final-cta-actions">
+        <a href="#contact" class="btn btn-primary">
+          <span class="btn-icon">&#9742;</span> Call for a Free Quote
+        </a>
+      </div>
+      <div class="final-contact">
+        <div class="final-contact-item">
+          <span class="final-contact-icon">&#9742;</span>
+          <span>Call for a Free Quote</span>
+        </div>
+        <div class="final-contact-item">
+          <span class="final-contact-icon">&#128205;</span>
+          <span>Yukon, OK 73078</span>
+        </div>
+        <div class="final-contact-item">
+          <span class="final-contact-icon">&#128205;</span>
+          <span>Serving Yukon, OK 73099</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Duffel Dental. All rights reserved.</p>
+      <p class="footer-bspoke">Built by <a href="https://bspoke.studio" target="_blank">b.spoke</a> | bspoke.studio</p>
+    </div>
+  </footer>
+
+  <!-- PREVIEW BANNER -->
+  <div class="preview-banner">
+    &#9733; This is a free preview built by <a href="https://bspoke.studio">b.spoke</a> — like what you see? Let's make it yours.
+  </div>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta">
+    <a href="#contact">
+      <span>&#9742;</span> Tap to Call — Free Quote
+    </a>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
+      links.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => links.classList.remove('open'));
+      });
+    }
+    const headerTop = document.querySelector('.header-top');
+    window.addEventListener('scroll', () => {
+      if (headerTop) {
+        headerTop.style.transform = window.scrollY > 80 ? 'translateY(-100%)' : 'translateY(0)';
+        headerTop.style.transition = 'transform 0.3s ease';
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
